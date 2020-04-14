@@ -26,8 +26,13 @@
 * Peso 600 (seminegrito)
 * https://fonts.google.com/specimen/Quicksand?query=quic&preview.text=Plan2Go&preview.text_type=custom&selection.family=Quicksand:wght@600&sidebar.open
 
+![title](design/title.png)
+
 ### Texto
 
 * Roboto
 * Peso 400 (regular)
 * https://fonts.google.com/specimen/Roboto?query=roboto&preview.text_type=custom&selection.family=Roboto&sidebar.open
+
+![text](design/text.png)
+
