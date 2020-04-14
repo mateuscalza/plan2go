@@ -4,11 +4,14 @@
 
 ### Primária
 
-Base: #1ed2fb - rgb(30, 210, 251)
-Variações: https://superdevresources.com/tools/color-shades#04b2d9
+* Base: #1ed2fb - rgb(30, 210, 251)
+* Variações: https://superdevresources.com/tools/color-shades#04b2d9
 
+![primary](design/primary.png)
 
 ### Secundária
 
-Base: #cfe335 - rgb(207, 227, 53)
-Variações: https://superdevresources.com/tools/color-shades#c3d91e
+* Base: #cfe335 - rgb(207, 227, 53)
+* Variações: https://superdevresources.com/tools/color-shades#c3d91e
+
+![secondary](design/secondary.png)
