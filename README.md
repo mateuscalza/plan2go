@@ -41,3 +41,16 @@
 Para telas de carregamento, slides, páginas de apresentação...
 
 ![illustration1](design/illustration1.png)
+
+## Sombras
+
+Tons de cinza, três níveis:
+ * 1px 1px 2px rgba(130, 130, 130, 0.2)
+ * 1px 2px 5px rgba(130, 130, 130, 0.3)
+ * 1px 4px 7px rgba(130, 130, 130, 0.2)
+
+
+## Bordas
+
+Arredondadas com 6px, sem níveis, sem largura.
+
