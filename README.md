@@ -36,3 +36,8 @@
 
 ![text](design/text.png)
 
+## Ilustrações
+
+Para telas de carregamento, slides, páginas de apresentação...
+
+![illustration1](design/illustration1.png)
