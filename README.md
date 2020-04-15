@@ -26,8 +26,31 @@
 * Peso 600 (seminegrito)
 * https://fonts.google.com/specimen/Quicksand?query=quic&preview.text=Plan2Go&preview.text_type=custom&selection.family=Quicksand:wght@600&sidebar.open
 
+![title](design/title.png)
+
 ### Texto
 
 * Roboto
 * Peso 400 (regular)
 * https://fonts.google.com/specimen/Roboto?query=roboto&preview.text_type=custom&selection.family=Roboto&sidebar.open
+
+![text](design/text.png)
+
+## Ilustrações
+
+Para telas de carregamento, slides, páginas de apresentação...
+
+![illustration1](design/illustration1.png)
+
+## Sombras
+
+Tons de cinza, três níveis:
+ * 1px 1px 2px rgba(130, 130, 130, 0.2)
+ * 1px 2px 5px rgba(130, 130, 130, 0.3)
+ * 1px 4px 7px rgba(130, 130, 130, 0.2)
+
+
+## Bordas
+
+Arredondadas com 6px, sem níveis, sem largura.
+
