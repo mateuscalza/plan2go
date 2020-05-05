@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #ecf0f1;
 }
 
 code {
@@ -15,4 +16,48 @@ code {
 label {
   display: block;
   margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #04b2d9;
+  background: linear-gradient(40deg, #0390af, #04b2d9);
+  box-shadow: 1px 2px 5px rgba(130, 130, 130, 0.3);
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+.icon, button.icon {
+  font-size: 1.2em;
+  color: #fff;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+
+button.center {
+  margin: 10px;
+}
+
+ul {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin: 10px;
+  box-shadow: 1px 4px 7px rgba(130, 130, 130, 0.2);
+  border-radius: 6px;
+}
+
+li {
+  margin: 0;
+  padding: 5px 10px;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
 }

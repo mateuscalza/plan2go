@@ -1,4 +1,5 @@
 import React from 'react';
+import './header.css'
 
 export default function Header({ title, goBack }) {
   const handleBack = event => {
@@ -8,8 +9,9 @@ export default function Header({ title, goBack }) {
   
   return (
     <header className='header'>
-      {goBack ? <button onClick={handleBack}>{'<'}</button> : null}
+      {goBack ? <button onClick={handleBack} className='icon'>{'◀︎'}</button> : <div />}
       {title}
+      <div />
     </header>
   )
 }

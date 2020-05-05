@@ -24,7 +24,7 @@ export default function TravelListScreen({ onRoute }) {
       <button onClick={handleNewTravel}>Nova viagem</button>
 
       <ul className="travelList-list">
-        {travels.map(travel => <li key={travel.id}>{travel.nome} <button onClick={event => handleEdit(event, travel.id)}>Editar</button></li>)}
+        {travels.map(travel => <li key={travel.id}>{travel.nome} <button onClick={event => handleEdit(event, travel.id)}>✎</button></li>)}
       </ul>
     </>
   );
