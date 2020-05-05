@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import TravelListScreen from './packages/travel/list/travelList.screen'
+import TravelDetailsScreen from './packages/travel/create/travelDetails.screen';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [route, setRoute] = useState({ name: 'travelList' })
+
+  const handleRoute = (name, params) => {
+    setRoute({ name, params })
+  }
+
+  switch (route.name) {
+    case 'travelList':
+      return (
+        <TravelListScreen onRoute={handleRoute} />
+      );
+    case 'travelDetails':
+      return (
+        <TravelDetailsScreen onRoute={handleRoute} id={route.params.id} />
+      );
+    default:
+      return (
+        <TravelListScreen onRoute={handleRoute} />
+      );
+  }
 }
 
 export default App;
