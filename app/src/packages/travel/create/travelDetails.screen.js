@@ -9,11 +9,6 @@ export default function TravelDetailsScreen(props) {
 
   const travel = useMemo(() => travels.find(travel => travel.id === props.id) || {}, [travels, props.id])
 
-  const handleNewTravel = event => {
-    event.preventDefault()
-    props.onRoute('travelDetails')
-  }
-
   const handleBlurField = (event, field) => {
     setTravels([
       {
