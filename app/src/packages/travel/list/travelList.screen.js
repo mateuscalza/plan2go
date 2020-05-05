@@ -21,9 +21,11 @@ export default function TravelListScreen({ onRoute }) {
     <>
       <Header title='Minhas viagens' />
 
-      <button onClick={handleNewTravel}>Nova viagem</button>
+      <div className='box content-centered'>
+        <button onClick={handleNewTravel}>Nova viagem</button>
+      </div>
 
-      <ul className="travelList-list">
+      <ul className="travelList-list box styled">
         {travels.map(travel => <li key={travel.id}>{travel.nome} <button onClick={event => handleEdit(event, travel.id)}>✎</button></li>)}
       </ul>
     </>

@@ -9,9 +9,9 @@ export default function Header({ title, goBack }) {
   
   return (
     <header className='header'>
-      {goBack ? <button onClick={handleBack} className='icon'>{'◀︎'}</button> : <div />}
+      {goBack ? <button onClick={handleBack} className='icon'>{'◀︎'}</button> : <div className='icon' />}
       {title}
-      <div />
+      <div className='icon' />
     </header>
   )
 }

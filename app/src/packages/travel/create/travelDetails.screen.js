@@ -29,7 +29,7 @@ export default function TravelDetailsScreen(props) {
     <>
       <Header title='Viagem' goBack={() => props.onRoute('travelList')} />
 
-      <form>
+      <form className='box styled'>
         <label>
           Nome<br />
           <input defaultValue={travel.nome || ''} onBlur={event => handleBlurField(event, 'nome')} />
@@ -46,7 +46,7 @@ export default function TravelDetailsScreen(props) {
         </label>
       </form>
 
-      <button onClick={handleNewTravel}>Novo evento</button>
+      {/* <button onClick={handleNewTravel}>Novo evento</button> */}
 
       <ul className="travelDetails-events">
         {events.map(event => <li key={event.id}>{event.nome} <button>Editar</button></li>)}
