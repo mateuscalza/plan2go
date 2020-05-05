@@ -6,7 +6,7 @@
 
 * Base: #1ed2fb - rgb(30, 210, 251)
 * Texto acessível: #303030 - rgb(48, 48, 48) - https://webaim.org/resources/contrastchecker/?fcolor=303030&bcolor=1ED2FB
-* Variações - https://superdevresources.com/tools/color-shades#04b2d9
+* Variações - https://superdevresources.com/tools/color-shades#c3d91e
 
 ![primary](design/primary.png)
 
@@ -14,7 +14,7 @@
 
 * Base: #cfe335 - rgb(207, 227, 53)
 * Texto acessível: #303030 - rgb(48, 48, 48) - https://webaim.org/resources/contrastchecker/?fcolor=303030&bcolor=CFE335
-* Variações - https://superdevresources.com/tools/color-shades#c3d91e
+* Variações - https://superdevresources.com/tools/color-shades#04b2d9
 
 ![secondary](design/secondary.png)
 
