@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react';
 import { useLocalStorage } from 'react-use';
+import { v4 as uuid } from 'uuid';
 import './travelDetails.styles.css';
 import Header from '../../../components/header';
 
@@ -8,6 +9,22 @@ export default function TravelDetailsScreen(props) {
   const [events] = useLocalStorage('events', [])
 
   const travel = useMemo(() => travels.find(travel => travel.id === props.id) || {}, [travels, props.id])
+  const travelEvents = useMemo(() => events.filter(event => travel.id === event.travelId) || [], [events, travel.id])
+
+  const handleNewEvent = () => {
+    props.onRoute('eventDetails', {
+      id: uuid(),
+      travelId: props.id,
+    })
+  }
+
+  const handleEdit = (event, id) => {
+    event.preventDefault()
+    props.onRoute('eventDetails', {
+      id,
+      travelId: props.id,
+    })
+  }
 
   const handleBlurField = (event, field) => {
     setTravels([
@@ -41,11 +58,16 @@ export default function TravelDetailsScreen(props) {
         </label>
       </form>
 
-      {/* <button onClick={handleNewTravel}>Novo evento</button> */}
+      <h2>Eventos</h2>
+      <div className="box styled">
+        <div className="box content-centered">
+          <button onClick={handleNewEvent}>Novo evento</button>
+        </div>
 
-      <ul className="travelDetails-events">
-        {events.map(event => <li key={event.id}>{event.nome} <button>Editar</button></li>)}
-      </ul>
+        <ul className="travelDetails-events">
+          {travelEvents.map(event => <li key={event.id}>{event.nome} <button onClick={event => handleEdit(event, event.id)}>✎</button></li>)}
+        </ul>
+      </div>
     </>
   );
 }

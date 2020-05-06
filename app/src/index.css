@@ -71,7 +71,6 @@ button {
 
 .box {
   padding: 10px;
-  list-style: none;
   margin: 10px;
 }
 .box.styled {
@@ -90,6 +89,12 @@ form {
   padding: 5px 10px;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 li {
   margin: 0;
   padding: 5px 10px;
@@ -97,4 +102,10 @@ li {
 
   justify-content: space-between;
   align-items: center;
+}
+
+h2 {
+  margin-top: 35px;
+  font-size: 1.1em;
+  text-align: center;
 }
