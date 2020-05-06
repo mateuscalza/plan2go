@@ -65,7 +65,7 @@ export default function TravelDetailsScreen(props) {
         </div>
 
         <ul className="travelDetails-events">
-          {travelEvents.map(event => <li key={event.id}>{event.nome} <button onClick={event => handleEdit(event, event.id)}>✎</button></li>)}
+          {travelEvents.map(travelEvent => <li key={travelEvent.id}>{travelEvent.nome} <button onClick={event => handleEdit(event, travelEvent.id)}>✎</button></li>)}
         </ul>
       </div>
     </>

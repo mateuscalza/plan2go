@@ -8,6 +8,8 @@ export default function EventDetailsScreen(props) {
 
   const travelEvent = useMemo(() => events.find(event => event.id === props.id) || {}, [events, props.id])
 
+  console.log('travelEvent', events, props.id, travelEvent)
+
   const handleBlurField = (event, field) => {
     setEvents([
       {
