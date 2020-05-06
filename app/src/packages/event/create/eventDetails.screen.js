@@ -16,7 +16,7 @@ export default function EventDetailsScreen(props) {
         travelId: props.travelId,
         [field]: event.target.value,
       },
-      ...events.filter(event => travelEvent.id !== props.id)
+      ...events.filter(current => current.id !== props.id)
     ])
   }
 
